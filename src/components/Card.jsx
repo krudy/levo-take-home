@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Card = ({ date, title, description, backgroundColor }) => (
   <>
@@ -31,5 +32,12 @@ const Card = ({ date, title, description, backgroundColor }) => (
     `}</style>
   </>
 );
+
+Card.propTypes = {
+  date: PropTypes.string,
+  title: PropTypes.string,
+  description: PropTypes.string,
+  backgroundColor: PropTypes.string,
+};
 
 export default Card;
